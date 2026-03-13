@@ -2,7 +2,7 @@ from bing_image_downloader import downloader
 import os
 
 
-queries = ["chess_board"]
+queries = ["football"]
 
 
 output_directory = 'assets'
@@ -13,7 +13,7 @@ for query in queries:
     
     downloader.download(
         query, 
-        limit=2, 
+        limit=20, 
         output_dir=output_directory, 
         adult_filter_off=True, 
         force_replace=False, 
@@ -21,4 +21,4 @@ for query in queries:
         verbose=True
     )
 
-print("\n Chess pics are here!")
+print("\n Football pics are here!")
