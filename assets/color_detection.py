@@ -16,7 +16,7 @@ while True:
 
     result = cv2.bitwise_and(frame,frame,mask=mask)
 
-    cv2.imshow('frame',mask)
+    cv2.imshow('frame',result)
 
     if cv2.waitKey(1) == ord('q'):
         break
