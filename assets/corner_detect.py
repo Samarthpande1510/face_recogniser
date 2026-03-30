@@ -15,7 +15,7 @@ print(corners) #returns the float values and we need to return them in int
 corners = np.int_(corners) #we need to ravel this
 
 for corner in corners:
-    x, y = corner.ravel() # if input is [[[2,3,4]] --> [2,3,4]
+    x, y = corner.ravel() # if input is [[[2,3,4]]] --> [2,3,4]
     cv2.circle(img, (x,y), 5, (255,0,0), -1)
 
 #draw lines between each corner

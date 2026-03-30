@@ -2,7 +2,7 @@ from bing_image_downloader import downloader
 import os
 
 # 1. Define your classes (The 4 Pokemon)
-queries = ["Pikachu", "Bulbasaur", "Charmander", "Squirtle"]
+queries = ["narendra modi","Netanyahu","Putin"]
 
 # 2. Set the output directory
 output_directory = 'dataset'
@@ -13,7 +13,7 @@ for query in queries:
     
     downloader.download(
         query, 
-        limit=25, 
+        limit=30, 
         output_dir=output_directory, 
         adult_filter_off=True, 
         force_replace=False, 
